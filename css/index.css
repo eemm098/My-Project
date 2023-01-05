@@ -1,0 +1,117 @@
+/*-------global rules---------*/
+:root{
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 ;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: hsl(220 , 60% , 10%) ;
+}
+
+/*------end global rules*/
+.container .card{
+   position: absolute;
+    width: 300px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   background-color:  hsl(216, 50%, 16%);
+   border-radius: 5%;
+  
+}
+.card .cont{
+   width: 100%;
+   padding: 15px;
+   
+    
+}
+.card .cont img{
+    width: 100%;
+    border-radius: 5%;
+   
+}
+.card .cont img:hover{
+    filter:  invert(1) grayscale(1);
+}
+.card .cont img:hover + svg{
+    display: block;
+}
+.card .cont svg{
+    position: absolute;
+    top:23%;
+    left: 42%;
+  display: none;
+ 
+}
+.card .cont h4{
+    color: hsl(0 ,0% , 100%);
+    font-weight: 600;
+}
+.card .cont h4:hover{
+    color: hsl(178, 100%, 50%) ;
+}
+.card .cont p{
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.card .info p{
+    display: inline-block;
+}
+.card  .info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card .info .one{
+    color:  hsl(178, 100%, 50%);
+}
+.card .info .two
+{
+    color:hsl(215, 51%, 70%) ;
+}
+.card hr{
+    width: 80%;
+  
+  border-top: 0px solid hsl(215, 51%, 70%) ;
+  
+}
+ .card .end{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+ }
+.card  .end img{
+   
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.card .end p{
+    color:  hsl(215, 51%, 70%);
+    font-weight: 300px;
+}
+.card .end p span
+{
+    color:white;
+}
+
+.card .end p span:hover{
+    color: hsl(178, 100%, 50%) ;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
